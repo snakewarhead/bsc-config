@@ -1,0 +1,7 @@
+geth/
+keystore/
+logs/
+node.pid
+*.txt
+*.log
+geth_linux
