@@ -1,6 +1,6 @@
 [Eth]
 NetworkId = 56
-SyncMode = "full"
+SyncMode = "fast"
 NoPruning = false
 NoPrefetch = false
 LightPeers = 100
@@ -42,18 +42,18 @@ Percentile = 60
 MaxMessageSize = 1048576
 RestrictConnectionBetweenLightClients = true
 
-[Node]
-IPCPath = "geth.ipc"
-HTTPHost = "0.0.0.0"
-NoUSB = true
-InsecureUnlockAllowed = true
-HTTPPort = 8545
-HTTPVirtualHosts = ["*"]
-HTTPModules = ["eth", "net", "web3", "txpool", "parlia"]
-WSPort = 8546
-WSModules = ["net", "web3", "eth"]
-GraphQLPort = 8557
-GraphQLVirtualHosts = ["*"]
+/*[Node]*/
+/*IPCPath = "geth.ipc"*/
+/*HTTPHost = "0.0.0.0"*/
+/*NoUSB = true*/
+/*InsecureUnlockAllowed = true*/
+/*HTTPPort = 8545*/
+/*HTTPVirtualHosts = ["*"]*/
+/*HTTPModules = ["eth", "net", "web3", "txpool", "parlia"]*/
+/*WSPort = 8546*/
+/*WSModules = ["net", "web3", "eth"]*/
+/*GraphQLPort = 8557*/
+/*GraphQLVirtualHosts = ["*"]*/
 
 [Node.P2P]
 MaxPeers = 200
