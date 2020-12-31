@@ -3,5 +3,5 @@ keystore/
 logs/
 node.pid
 *.txt
-*.log
+*.log*
 geth_linux
