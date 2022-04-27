@@ -16,10 +16,16 @@ mkdir -p /wallet/bsc/data
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/bsc-config/master/install.sh)"
 ```
 
+## Sync From Snapshot (Recommended)
+
+1. `nohup wget -O geth.tar.gz "<paste snapshot URL here?" &`
+
+1. `nohup tar -I lz4 xvf geth.tar.lz4 &`
+
 ## crontab
 
 ```bash
-*/5 * * * * /wallet/bsc/data/checkrunning.sh
+*/10 * * * * /wallet/bsc/data/checkrunning.sh
 0 6 * * * /wallet/bsc/data/start.sh
 ```
 
