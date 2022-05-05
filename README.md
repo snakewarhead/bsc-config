@@ -18,7 +18,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/bsc-config/ma
 
 ## Sync From Snapshot (Recommended)
 
-1. `nohup -cO geth.tar.lz4 "<paste snapshot URL here?" &`
+1. `nohup -cO geth.tar.lz4 "<paste snapshot URL here?" &`, or use aria2c `aria2c -o geth.tar.lz4 -x 4 -s 12 "URL TO ASIA ENDPOINT" "URL TO EU ENDPOINT" "URL TO US ENDPOINT"`
 
 1. `nohup tar -I lz4 xvf geth.tar.lz4 &`
 
