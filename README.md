@@ -18,7 +18,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/bsc-config/ma
 
 ## Sync From Snapshot (Recommended)
 
-1. `nohup wget -O geth.tar.gz "<paste snapshot URL here?" &`
+1. `nohup -cO geth.tar.lz4 "<paste snapshot URL here?" &`
 
 1. `nohup tar -I lz4 xvf geth.tar.lz4 &`
 
