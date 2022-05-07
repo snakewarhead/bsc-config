@@ -41,7 +41,7 @@ OracleThreshold = 20
 
 [Node]
 IPCPath = "geth.ipc"
-HTTPHost = "0.0.0.0"
+HTTPHost = "192.168.1.51"
 NoUSB = true
 InsecureUnlockAllowed = false
 HTTPPort = 8545
@@ -65,6 +65,6 @@ IdleTimeout = 120000000000
 
 [Node.LogConfig]
 FilePath = "bsc.log"
-MaxBytesSize = 10485760
+MaxBytesSize = 104857600
 Level = "info"
 FileRoot = ""
