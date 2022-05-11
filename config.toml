@@ -65,6 +65,6 @@ IdleTimeout = 120000000000
 
 [Node.LogConfig]
 FilePath = "bsc.log"
-MaxBytesSize = 104857600
+MaxBytesSize = 104857600000
 Level = "info"
 FileRoot = ""
