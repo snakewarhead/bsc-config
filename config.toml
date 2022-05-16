@@ -5,11 +5,11 @@ NoPruning = false
 NoPrefetch = false
 LightPeers = 100
 UltraLightFraction = 75
-DatabaseCache = 512
-DatabaseFreezer = ""
-TrieCleanCache = 256
-TrieDirtyCache = 256
-TrieTimeout = 3600000000000
+#DatabaseCache = 512
+#DatabaseFreezer = ""
+#TrieCleanCache = 256
+#TrieDirtyCache = 256
+TrieTimeout = 100000000000
 EnablePreimageRecording = false
 EWASMInterpreter = ""
 EVMInterpreter = ""
@@ -41,14 +41,16 @@ OracleThreshold = 20
 
 [Node]
 IPCPath = "geth.ipc"
-HTTPHost = "192.168.1.51"
 NoUSB = true
 InsecureUnlockAllowed = false
+HTTPHost = "192.168.1.51"
 HTTPPort = 8545
 HTTPVirtualHosts = ["*"]
 HTTPModules = ["eth", "net", "web3", "txpool", "parlia"]
+WSHost = "192.168.1.51"
 WSPort = 8546
-WSModules = ["net", "web3", "eth"]
+WSOrigins = ["*"]
+WSModules = ["eth", "net", "web3", "txpool"]
 
 [Node.P2P]
 MaxPeers = 100
